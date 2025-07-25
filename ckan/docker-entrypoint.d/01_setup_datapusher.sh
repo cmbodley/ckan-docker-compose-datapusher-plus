@@ -14,5 +14,6 @@ echo "data pusher plus stuff 2"
 #data pusher plus config
 ckan config-tool $CKAN_INI "scheming.dataset_fallback = true"
 ckan config-tool $CKAN_INI "scheming.presets = ckanext.scheming:presets.json"
-ckan config-tool $CKAN_INI "scheming.dataset_schemas = ckanext.datapusher_plus:dataset-druf.yaml"
+ckan config-tool $CKAN_INI "scheming.dataset_schemas = ckanext.scheming:ckan_dataset.yaml"
+#ckan config-tool $CKAN_INI "scheming.dataset_schemas = ckanext.datapusher_plus:dataset-druf.yaml"
 ckan config-tool $CKAN_INI "ckan.datastore.write_url = $CKAN_DATASTORE_WRITE_URL"
